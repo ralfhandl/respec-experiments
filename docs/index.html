@@ -35,8 +35,8 @@ dfn{cursor:pointer}
       .dt-published::before {
         content: "Published ";
       }
-      cite { font-weight: bold; }
-      code { color: #c83500 } // default of ReSpec 21.x
+      cite { font-weight: bold; text-decoration: underline;}
+      code { color: #c83500 }
     
 </style>
   
@@ -111,7 +111,6 @@ var[data-type]::after{content:attr(data-type);transform:translateX(-50%) transla
 var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </style>
 <script id="initialUserConfig" type="application/json">{
-  "xref": false,
   "lint": {
     "a11y": true,
     "local-refs-exist": true
@@ -239,11 +238,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="this-is-a-heading"><div class="header-wrapper"><h3 id="x1-2-this-is-a-heading"><bdi class="secno">1.2 </bdi>This is a heading</h3><a class="self-link" href="#this-is-a-heading" aria-label="Permalink for Section 1.2"></a></div>
 <p>I'm a paragraph. See [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3986" title="Uniform Resource Identifier (URI): Generic Syntax">RFC3986</a></cite>]</p>
 <ul>
-<li><a id="localAnchor" class="respec-offending-element" title="Linking error: not matching `<dfn>`"></a>list item</li>
+<li><a name="localAnchor" class="logo"></a>list item</li>
 <li>another list item</li>
 </ul>
 </section><section id="section-with-local-anchor"><div class="header-wrapper"><h3 id="x1-3-section-with-local-anchor"><bdi class="secno">1.3 </bdi>Section with local anchor</h3><a class="self-link" href="#section-with-local-anchor" aria-label="Permalink for Section 1.3"></a></div>
-<p><a id="foo" class="respec-offending-element" title="Linking error: not matching `<dfn>`"></a>Something I want to link to.</p>
+<p><a name="foo" class="logo"></a>Something I want to link to.</p>
 </section></section><section id="another-chapter"><div class="header-wrapper"><h2 id="x2-another-chapter"><bdi class="secno">2. </bdi>Another chapter</h2><a class="self-link" href="#another-chapter" aria-label="Permalink for Section 2."></a></div>
 <p>Inline <code>code</code>.</p>
 <p>Embedded JSON:</p>

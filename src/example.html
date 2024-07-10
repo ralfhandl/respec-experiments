@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark">
     <title>ReSpec Experiments</title>
     <script
-      src="../node_modules/respec/builds/respec-w3c.js"
+      src="https://www.w3.org/Tools/respec/respec-w3c"
       class="remove"
       defer
     ></script>
@@ -69,7 +69,7 @@
         content: "Published ";
       }
       cite { font-weight: bold; text-decoration: underline;}
-      code { color: #c83500 } // default of ReSpec 21.x
+      code { color: #c83500 }
     </style>
   </head>
   <body>
@@ -95,12 +95,12 @@
 
 I'm a paragraph. See [[RFC3986]]
 
-* <a id="localAnchor"></a>list item
+* <a name="localAnchor" class="logo"></a>list item
 * another list item
 
 ## Section with local anchor
 
-<a id="foo"></a>Something I want to link to.
+<a name="foo" class="logo"></a>Something I want to link to.
 
 # Another chapter
 

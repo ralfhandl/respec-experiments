@@ -9,11 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "patch-package": "^8.0.0",
     "respec": "^35.1.1"
   },
   "scripts": {
-    "postinstall": "patch-package",
     "build": "respec --use-local --src src/example.html --out docs/index.html"
   }
 }
