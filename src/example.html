@@ -5,14 +5,14 @@
     <meta name="color-scheme" content="light dark">
     <title>ReSpec Experiments</title>
     <script
-      src="https://www.w3.org/Tools/respec/respec-w3c"
+      src="../node_modules/respec/builds/respec-w3c.js"
       class="remove"
       defer
     ></script>
     <script class="remove">
       // All config options at https://respec.org/docs/
       var respecConfig = {
-        xref: false,
+        // xref: false,
         // lint: false,
         lint: {
           a11y: true,
@@ -68,7 +68,7 @@
       .dt-published::before {
         content: "Published ";
       }
-      cite { font-weight: bold; }
+      cite { font-weight: bold; text-decoration: underline;}
       code { color: #c83500 } // default of ReSpec 21.x
     </style>
   </head>
