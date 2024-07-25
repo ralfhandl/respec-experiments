@@ -12,6 +12,6 @@
     "respec": "^35.1.1"
   },
   "scripts": {
-    "build": "respec --use-local --src src/example.html --out docs/index.html"
+    "build": "respec -e -w --use-local --src src/example.html --out docs/index.html"
   }
 }
