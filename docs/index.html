@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en" dir="ltr"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.5.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -56,7 +56,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -103,6 +103,23 @@ dd{margin-left:0}
 .hljs-emphasis{font-style:italic}
 .hljs-strong{font-weight:700}
 .hljs-link{text-decoration:underline}
+</style>
+<style>
+var:hover{text-decoration:underline;cursor:pointer}
+var.respec-hl{color:var(--color,#000);background-color:var(--bg-color);box-shadow:0 0 0 2px var(--bg-color)}
+@media (prefers-color-scheme:dark){
+var.respec-hl{filter:saturate(.9) brightness(.9)}
+}
+var.respec-hl-c1{--bg-color:#f4d200}
+var.respec-hl-c2{--bg-color:#ff87a2}
+var.respec-hl-c3{--bg-color:#96e885}
+var.respec-hl-c4{--bg-color:#3eeed2}
+var.respec-hl-c5{--bg-color:#eacfb6}
+var.respec-hl-c6{--bg-color:#82ddff}
+var.respec-hl-c7{--bg-color:#ffbcf2}
+@media print{
+var.respec-hl{background:0 0;color:#000;box-shadow:unset}
+}
 </style>
 <style>
 var{position:relative;cursor:pointer}
@@ -270,7 +287,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   
   <p>This section is required.</p>
   <p>Second paragraph of abstract.</p>
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#using-markdown"><bdi class="secno">1. </bdi>Using Markdown</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.1 </bdi>Custom Conformance</a></li><li class="tocline"><a class="tocxref" href="#this-is-a-heading"><bdi class="secno">1.2 </bdi>This is a heading</a></li><li class="tocline"><a class="tocxref" href="#section-with-local-anchor"><bdi class="secno">1.3 </bdi>Section with local anchor</a></li></ol></li><li class="tocline"><a class="tocxref" href="#another-chapter"><bdi class="secno">2. </bdi>Another chapter</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-with-internal-link"><bdi class="secno">2.1 </bdi>Section with internal link</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#using-markdown"><bdi class="secno">1. </bdi>Using Markdown</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.1 </bdi>Custom Conformance</a></li><li class="tocline"><a class="tocxref" href="#this-is-a-heading"><bdi class="secno">1.2 </bdi>This is a heading</a></li><li class="tocline"><a class="tocxref" href="#section-with-local-anchor"><bdi class="secno">1.3 </bdi>Section with local anchor</a></li></ol></li><li class="tocline"><a class="tocxref" href="#custom-anchor"><bdi class="secno">2. </bdi>Another chapter</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-with-internal-link"><bdi class="secno">2.1 </bdi>Section with internal link</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
 <section id="using-markdown"><div class="header-wrapper"><h2 id="x1-using-markdown"><bdi class="secno">1. </bdi>Using Markdown</h2><a class="self-link" href="#using-markdown" aria-label="Permalink for Section 1."></a></div>
 <section class="override" id="conformance"><div class="header-wrapper"><h3 id="x1-1-custom-conformance"><bdi class="secno">1.1 </bdi>Custom Conformance</h3><a class="self-link" href="#conformance" aria-label="Permalink for Section 1.1"></a></div>
@@ -288,8 +305,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </ul>
 </section><section id="section-with-local-anchor"><div class="header-wrapper"><h3 id="x1-3-section-with-local-anchor"><bdi class="secno">1.3 </bdi>Section with local anchor</h3><a class="self-link" href="#section-with-local-anchor" aria-label="Permalink for Section 1.3"></a></div>
 <p><span id="foo"></span>Something I want to link to.</p>
-</section></section><section id="another-chapter"><div class="header-wrapper"><h2 id="x2-another-chapter"><bdi class="secno">2. </bdi>Another chapter</h2><a class="self-link" href="#another-chapter" aria-label="Permalink for Section 2."></a></div>
-<p>Inline <code>code</code>.</p>
+</section></section><section id="another-chapter"><div class="header-wrapper"><h2 id="custom-anchor"><bdi class="secno">2. </bdi>Another chapter</h2><a class="self-link" href="#custom-anchor" aria-label="Permalink for Section 2."></a></div><p>Inline <code>code</code>.</p>
 <p>Embedded JSON:</p>
 <pre><code class="json hljs" aria-busy="false"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"key"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"value"</span>
@@ -299,6 +315,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <p>See <a href="#foo">something</a>.</p>
 <p>And <a href="#using-markdown">see here</a>.</p>
 <p>Go to first <a href="#localAnchor">list item</a>.</p>
+<p>Go to <a href="#custom-anchor">custom anchor</a>.</p>
 <p>Dangling reference to <a href="#non-existing-anchor" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">non-existing anchor</a>.</p>
 <p>Normative reference [<cite><a class="bibref" data-link-type="biblio" href="#bib-openapi" title="OpenAPI Specification">OpenAPI</a></cite>], [<cite><a class="bibref" data-link-type="biblio" href="#bib-openapi-3.0.3" title="OpenAPI Specification - version 3.0.3">OpenAPI-3.0.3</a></cite>].</p>
 <p>Manual reference [<cite><a class="bibref" data-link-type="biblio" href="#bib-openapi" title="OpenAPI Specification">OpenAPI</a></cite>].</p>
@@ -341,7 +358,104 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-highlight-vars">(() => {
+// @ts-check
+
+if (document.respec) {
+  document.respec.ready.then(setupVarHighlighter);
+} else {
+  setupVarHighlighter();
+}
+
+function setupVarHighlighter() {
+  document
+    .querySelectorAll("var")
+    .forEach(varElem => varElem.addEventListener("click", highlightListener));
+}
+
+function highlightListener(ev) {
+  ev.stopPropagation();
+  const { target: varElem } = ev;
+  const hightligtedElems = highlightVars(varElem);
+  const resetListener = () => {
+    const hlColor = getHighlightColor(varElem);
+    hightligtedElems.forEach(el => removeHighlight(el, hlColor));
+    [...HL_COLORS.keys()].forEach(key => HL_COLORS.set(key, true));
+  };
+  if (hightligtedElems.length) {
+    document.body.addEventListener("click", resetListener, { once: true });
+  }
+}
+
+// availability of highlight colors. colors from var.css
+const HL_COLORS = new Map([
+  ["respec-hl-c1", true],
+  ["respec-hl-c2", true],
+  ["respec-hl-c3", true],
+  ["respec-hl-c4", true],
+  ["respec-hl-c5", true],
+  ["respec-hl-c6", true],
+  ["respec-hl-c7", true],
+]);
+
+function getHighlightColor(target) {
+  // return current colors if applicable
+  const { value } = target.classList;
+  const re = /respec-hl-\w+/;
+  const activeClass = re.test(value) && value.match(re);
+  if (activeClass) return activeClass[0];
+
+  // first color preference
+  if (HL_COLORS.get("respec-hl-c1") === true) return "respec-hl-c1";
+
+  // otherwise get some other available color
+  return [...HL_COLORS.keys()].find(c => HL_COLORS.get(c)) || "respec-hl-c1";
+}
+
+function highlightVars(varElem) {
+  const textContent = norm(varElem.textContent);
+  const parent = varElem.closest(".algorithm, section");
+  const highlightColor = getHighlightColor(varElem);
+
+  const varsToHighlight = [...parent.querySelectorAll("var")].filter(
+    el =>
+      norm(el.textContent) === textContent &&
+      el.closest(".algorithm, section") === parent
+  );
+
+  // update availability of highlight color
+  const colorStatus = varsToHighlight[0].classList.contains("respec-hl");
+  HL_COLORS.set(highlightColor, colorStatus);
+
+  // highlight vars
+  if (colorStatus) {
+    varsToHighlight.forEach(el => removeHighlight(el, highlightColor));
+    return [];
+  } else {
+    varsToHighlight.forEach(el => addHighlight(el, highlightColor));
+  }
+  return varsToHighlight;
+}
+
+function removeHighlight(el, highlightColor) {
+  el.classList.remove("respec-hl", highlightColor);
+  // clean up empty class attributes so they don't come in export
+  if (!el.classList.length) el.removeAttribute("class");
+}
+
+function addHighlight(elem, highlightColor) {
+  elem.classList.add("respec-hl", highlightColor);
+}
+
+/**
+ * Same as `norm` from src/core/utils, but our build process doesn't allow
+ * imports in runtime scripts, so duplicated here.
+ * @param {string} str
+ */
+function norm(str) {
+  return str.trim().replace(/\s+/g, " ");
+}
+})()</script><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);

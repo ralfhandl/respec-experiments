@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "respec": "^35.1.1"
+    "respec": "^35.5.0"
   },
   "scripts": {
     "build": "respec --use-local --src src/example.html --out docs/index.html"
