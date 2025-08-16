@@ -130,11 +130,11 @@ I'm a paragraph. See [[RFC3986]]
 * <span id="localAnchor"></span>list item
 * another list item
 
-## Section with local anchor
+## Section with local anchor 
 
 <span id="foo"></span>Something I want to link to.
 
-# Another chapter
+# Another chapter {#custom-anchor}
 
 Inline `code`.
 
@@ -153,6 +153,8 @@ See [something](#foo).
 And [see here](#using-markdown).
 
 Go to first [list item](#localAnchor).
+
+Go to [custom anchor](#custom-anchor).
 
 Dangling reference to [non-existing anchor](#non-existing-anchor).
 
